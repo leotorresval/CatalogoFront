@@ -1,0 +1,20 @@
+<h2>Modificación de productos</h2>
+<mat-grid-list cols="4">
+    <mat-grid-tile *ngFor="let product of products">
+        <mat-card appearance="outlined">
+            <mat-card-header>
+                <mat-card-title>
+                    {{product.name}}
+                </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]="product.imagePath" alt="" class="product-image">
+            <mat-card-content>
+                <p>{{product.description}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="primary">Editar</button>
+                <button mat-raised-button color="err" (click)="delete(product.id)">Eliminar</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

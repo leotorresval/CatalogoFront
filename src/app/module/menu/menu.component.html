@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+    <span>
+        Catalogo Digital
+    </span>
+    <span ></span>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item  [routerLink]="['/app-list-products']">
+            <mat-icon>
+                list
+            </mat-icon>
+            <span>Catalogo</span>
+        </button>
+        <button mat-menu-item [routerLink]="['/app-create']">
+            <mat-icon>add</mat-icon>
+            <span>Crear</span>
+        </button>
+        <button mat-menu-item [routerLink]="['/app-edit']">
+            <mat-icon>edit</mat-icon>
+            <span>Editar</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>
