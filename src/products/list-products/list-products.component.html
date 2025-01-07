@@ -1,5 +1,9 @@
 <div class="product-list">
     <h2 class="title">Catálogo de Productos</h2>
+    <mat-form-field>
+      <mat-label>Buscar</mat-label>
+      <input matInput type="text">
+    </mat-form-field>
     <mat-grid-list cols="5" gutterSize="24px" rowHeight="400px" class="grid-container">
       <mat-grid-tile *ngFor="let p of products" class="grid-item">
         <mat-card class="product-card" appearance="raised">

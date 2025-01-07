@@ -4,11 +4,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-list-products',
   standalone: true,
-  imports: [MatCardModule,MatButtonModule,CommonModule,MatGridListModule],
+  imports: [MatCardModule,MatButtonModule,CommonModule,MatGridListModule,MatFormFieldModule,MatInputModule],
   templateUrl: './list-products.component.html',
   styleUrl: './list-products.component.css'
 })
